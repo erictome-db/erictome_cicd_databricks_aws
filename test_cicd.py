@@ -27,13 +27,13 @@ data = [
 
 temps = spark.createDataFrame(data, schema)
 spark.sql('USE default')
-spark.sql('DROP TABLE IF EXISTS demo_temps_table')
-temps.write.saveAsTable('demo_temps_table')
+spark.sql('DROP TABLE IF EXISTS erictome_temp_cicd')
+temps.write.saveAsTable('erictome_temp_cicd')
 
 
 # COMMAND ----------
 
-df_temps = spark.sql("SELECT * FROM demo_temps_table " \
+df_temps = spark.sql("SELECT * FROM erictome_temp_cicd " \
    "WHERE AirportCode != 'BLI' AND Date > '2021-04-01' " \
    "GROUP BY AirportCode, Date, TempHighF, TempLowF " \
    "ORDER BY TempHighF DESC")
