@@ -2,8 +2,8 @@
     "environments": {
         "default": {
             "profile": "AWSE2DEMO",
-            "workspace_dir": "/Shared/erictome/erictome_cicd_databricks_aws",
-            "artifact_location": "/Shared/erictome/projects/erictome_cicd_databricks_aws"
+            "workspace_dir": "/Shared/dbx/projects/erictome/erictome_cicd_databricks_aws",
+            "artifact_location": "dbfs:/Shared/dbx/projects/erictome/erictome_cicd_databricks_aws"
         }
     }
 }

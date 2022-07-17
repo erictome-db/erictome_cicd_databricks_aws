@@ -1,9 +1,10 @@
 # Databricks notebook source
-# How to run locally
-# USAGE: dbx execute --cluster-id=0312-144325-grimy701 --job=test --no-rebuild --no-package 
-#       To get all clusters: databricks clusters list --output JSON | jq '[ .clusters[] | { name: .cluster_name, id: .cluster_id } ]' 
-#     Shared Autoscaling EMEA
-#     dbx execute --job=test_cicd --cluster-name="Shared Autoscaling EMEA"
+#
+# To get all clusters: databricks clusters list --output JSON | jq '[ .clusters[] | { name: .cluster_name, id: .cluster_id } ]' 
+#
+# USAGE: 
+#       
+#     dbx execute --job=test_cicd --cluster-name="Shared Autoscaling Americas"
 
 from pyspark.sql.types import *
 from datetime import date

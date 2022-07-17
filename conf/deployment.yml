@@ -25,3 +25,9 @@ environments:
         spark_python_task:
           python_file: "file://tests/integration/sample_test.py"
           parameters: ["--conf-file", "file:fuse://conf/test/sample.yml"]
+      - name: "test_cicd"
+        <<:
+          - *basic-static-cluster
+        spark_python_task:
+          python_file: "file://erictome_cicd_databricks_aws/test_cicd.py"
+          parameters: ["--conf-file", "file:fuse://conf/test/sample.yml"]
