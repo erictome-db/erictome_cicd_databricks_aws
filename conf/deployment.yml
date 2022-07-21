@@ -27,7 +27,7 @@ environments:
         spark_python_task:
           python_file: "file://tests/integration/sample_test.py"
           parameters: ["--conf-file", "file:fuse://conf/test/sample.yml"]
-      - name: "test_cicd"
+      - name: "test_basic"
         <<:
           - *basic-static-cluster
         # existing_cluster_name: "Shared Autoscaling Americas"

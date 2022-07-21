@@ -47,5 +47,3 @@ df_temps = spark.sql("SELECT * FROM erictome_temp_cicd " \
 display(df_temps)
 
 # COMMAND ----------
-
-
