@@ -35,10 +35,13 @@ jobs:
         run: |
           pip install -r unit-requirements.txt
 
-      - name: Deploy the job
+      # - name: Deploy the job
+      #   run: |
+      #     dbx deploy --jobs=erictome_cicd_databricks_aws-sample
+      #     dbx deploy --jobs=test_basic
+
+      - name: Update Repo
         run: |
-          # dbx deploy --jobs=erictome_cicd_databricks_aws-sample
-          # dbx deploy --jobs=test_basic
           curl -X GET --H "Authorization: Bearer $DATABRICKS_TOKEN" -H 'Content-Type: application/json'https://etomecicd-1.cloud.databricks.com/api/2.0/repos/3969697633187989  -d '{"branch": "main"}'
 
       - name: Create Release
