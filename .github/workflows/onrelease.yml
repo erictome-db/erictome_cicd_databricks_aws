@@ -42,7 +42,7 @@ jobs:
 
       - name: Update Repo
         run: |
-          curl -X GET --H "Authorization: Bearer $DATABRICKS_TOKEN" -H 'Content-Type: application/json'https://etomecicd-1.cloud.databricks.com/api/2.0/repos/3969697633187989  -d '{"branch": "main"}'
+          curl -X GET -H "Authorization: Bearer $DATABRICKS_TOKEN" -H 'Content-Type: application/json'https://etomecicd-1.cloud.databricks.com/api/2.0/repos/3969697633187989  -d '{"branch": "main"}'
 
       - name: Create Release
         id: create_release
