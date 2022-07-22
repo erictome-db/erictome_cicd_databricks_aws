@@ -38,7 +38,6 @@ jobs:
       # - name: Deploy the job
       #   run: |
       #     dbx deploy --jobs=erictome_cicd_databricks_aws-sample
-      #     dbx deploy --jobs=test_basic
 
       - name: Update Repo
         run: |
