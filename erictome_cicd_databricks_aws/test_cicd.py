@@ -11,10 +11,6 @@ from datetime import date
 
 # COMMAND ----------
 
-# added a cell
-
-# COMMAND ----------
-
 schema = StructType([
     StructField('AirportCode', StringType(), False),
     StructField('Date', DateType(), False),
