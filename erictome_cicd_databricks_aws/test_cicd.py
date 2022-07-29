@@ -4,10 +4,14 @@
 #
 # USAGE: 
 #       
-#     dbx execute --job=test_cicd --cluster-name="Shared Autoscaling Americas"
+#     dbx execute --job=test_cicd --cluster-name="test1"
 
 from pyspark.sql.types import *
 from datetime import date
+
+# COMMAND ----------
+
+#added a cell
 
 # COMMAND ----------
 
@@ -47,5 +51,3 @@ df_temps = spark.sql("SELECT * FROM erictome_temp_cicd " \
 display(df_temps)
 
 # COMMAND ----------
-
-
