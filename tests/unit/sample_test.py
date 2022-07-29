@@ -2,7 +2,6 @@ import unittest
 import tempfile
 import os
 import shutil
-
 from erictome_cicd_databricks_aws.jobs.sample.entrypoint import SampleJob
 from pyspark.sql import SparkSession
 from unittest.mock import MagicMock
