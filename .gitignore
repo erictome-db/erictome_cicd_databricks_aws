@@ -32,3 +32,6 @@ htmlcov/*
 
 # local mlflow files
 mlruns/
+.repos.txt
+create-pr-v1.sh
+create-pr.sh
